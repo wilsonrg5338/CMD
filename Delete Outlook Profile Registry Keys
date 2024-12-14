@@ -1,0 +1,1 @@
+REG DELETE HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\Outlook\Profiles /f
