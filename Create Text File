@@ -1,0 +1,5 @@
+cd C:\
+
+@echo off
+
+	echo "Test File">"C:\Test.txt"
