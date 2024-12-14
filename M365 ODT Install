@@ -1,0 +1,16 @@
+::Install M365
+START /WAIT  C:\Windows\Temp\ODT\setup.exe /download C:\Windows\Temp\ODT\Config-NoOutlook.xml & START /WAIT C:\Windows\Temp\ODT\setup.exe /configure C:\Windows\Temp\ODT\Config-NoOutlook.xml
+
+::Install New Outlook
+START /WAIT C:\Windows\Temp\ODT\NewOutlook.exe
+
+::Create desktop shortcuts for Access, Excel, Word, Outlook, and OneNote
+copy "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Access.lnk" C:\Users\Public\Desktop\Access.lnk
+
+copy "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Excel.lnk" C:\Users\Public\Desktop\Excel.lnk
+
+copy "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Word.lnk" C:\Users\Public\Desktop\Word.lnk
+
+copy "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\OneNote.lnk" C:\Users\Public\Desktop\OneNote.lnk
+
+copy "C:\Windows\Temp\ODT\Outlook 365.lnk" "C:\Users\Public\Desktop\Outlook 365.lnk"
