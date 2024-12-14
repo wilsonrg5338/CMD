@@ -1,0 +1,5 @@
+::Restart LanDesk (Ivanti) Remote Control Service
+
+	net stop issuser
+
+	net start issuser
